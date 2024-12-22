@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata - Amni</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+            background: url('image/wallpaper.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        h1, h2, h3 {
+            color: indigo;
+            margin: 0 0 10px;
+        }
+
+        a {
+            color: indigo;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .nav-button {
+            background-color: indigo;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            z-index: 1000;
+        }
+
+        .nav-button:hover {
+            background-color: white;
+            color: indigo;
+            border: 1px solid indigo;
+        }
+
+        .nav-popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            border: 2px solid indigo;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            z-index: 1001;
+        }
+
+        .nav-popup.active {
+            display: block;
+        }
+
+        .nav-popup ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .nav-popup ul li {
+            margin: 10px 0;
+        }
+
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+        }
+
+        .overlay.active {
+            display: block;
+        }
+
+        .biodata-container {
+            padding: 50px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .biodata-container header {
+            text-align: center;
+            margin-bottom: 30px;
+            border: 2px solid indigo;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .biodata-container header h1 {
+            margin-bottom: 10px;
+        }
+
+        .biodata-details {
+            margin-bottom: 30px;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: square;
+        }
+
+        ul li {
+            margin: 5px 0;
+        }
+
+        footer {
+            text-align: center;
+            background-color: indigo;
+            color: white;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+
+        .video-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .video-container h2 {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Popup -->
+    <button class="nav-button" onclick="toggleNav()">Menu</button>
+    <div class="overlay" onclick="toggleNav()"></div>
+    <div class="nav-popup" id="navPopup">
+        <h3>Navigation</h3>
+        <ul>
+            <li><a href="main.html">Home</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="achievement.html">Achievements</a></li>
+            <li><a href="calendar.html">Calendar</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Biodata Container -->
+    <div class="biodata-container">
+        <header>
+            <h1>Profile and Background</h1>
+            <p>Explore my personal journey, values, and family story.</p>
+        </header>
+
+        <section class="biodata-details">
+            <div class="personal-info">
+                <h2>Personal Details</h2>
+                <p><strong>Name:</strong> Amni Zafirah Bt Norazlaili</p>
+                <p><strong>Date of Birth:</strong> 04 June 2004</p>
+                <p><strong>Age:</strong> 20</p>
+                <p><strong>Hometown:</strong> Kampung Pelain, Batu Gajah 17510 Tanah Merah, Kelantan</p>
+            </div>
+
+            <div class="skills">
+                <h2>Family Background</h2>
+                <p>I am the eldest of four siblings in a close-knit family. My role as the eldest sister has taught me responsibility, patience, and leadership, as I help guide and support my younger brothers:</p>
+                <ul>
+                    <li>Akief Nur Fikri: A student in the Mechanical Engineering program at UiTM Bukit Besi.</li>
+                    <li>Afif Nur Zikry and Afiq Nur Iqwan: Both are Persons with Disabilities (OKU), requiring special care and attention that our family wholeheartedly provides.</li>
+                </ul>
+                <p>My mother is a hardworking and independent woman, running her own business selling pre-loved clothing (baju bundle). She inspires me with her resilience and dedication. My father passed away when I was in Form 1, leaving a significant impact on my life, shaping me into a strong and determined individual.</p>
+            </div>
+
+            <div class="personal-values">
+                <h2>Personal Values</h2>
+                <p>Growing up in a supportive yet challenging environment has taught me the importance of perseverance, empathy, and family values. These experiences have molded me into someone who is not only driven to succeed but also deeply empathetic toward others.</p>
+            </div>
+        </section>
+
+        <!-- YouTube Video Embed -->
+        <div class="video-container">
+            <h2>My Favorite Video</h2>
+            <iframe 
+                width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/9LhHikyWnUg?si=VlDit7Cm9w7OB-em" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <!-- Carousel Section -->
+        <section class="carousel-section">
+            <h2>My Galery</h2>
+            <div class="carousel">
+                <img src="image/1.jpg" alt="Placeholder 1">
+                <img src="image/3.jpg" alt="Placeholder 3">
+                <img src="image/4.jpg" alt="Placeholder 4">
+            </div>
+        </section>
+        
+
+        <footer>
+            <p>My family and personal journey are the foundation of my strength and determination. They drive me to achieve my goals and contribute meaningfully to both my personal and professional life.</p>
+            <p>&copy; 2024 Amni Zafirah. All Rights Reserved.</p>
+        </footer>
+    </div>
+
+    <!-- JavaScript for Navigation Popup -->
+    <script>
+        function toggleNav() {
+            const nav = document.getElementById('navPopup');
+            const overlay = document.querySelector('.overlay');
+            const isVisible = nav.classList.contains('active');
+
+            nav.classList.toggle('active', !isVisible);
+            overlay.classList.toggle('active', !isVisible);
+        }
+    </script>
+</body>
+</html>

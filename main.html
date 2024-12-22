@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+            background: url('image/wallpaper.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        h1, h2, h3 {
+            color: indigo;
+            margin: 0 0 10px;
+        }
+
+        a {
+            color: indigo;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+
+        .hero-box {
+            display: inline-block;
+            border: 2px solid indigo;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: white;
+            text-align: center;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .hero-box img {
+            margin-top: 20px;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .nav-button {
+            background-color: indigo;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .nav-button:hover {
+            background-color: white;
+            color: indigo;
+            border: 1px solid indigo;
+        }
+
+        .nav-popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            border: 2px solid indigo;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .nav-popup ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .nav-popup ul li {
+            margin: 10px 0;
+        }
+
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .aboutus {
+            padding: 50px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .experience-details {
+            margin-top: 20px;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: square;
+        }
+
+        ul li {
+            margin: 5px 0;
+        }
+
+        footer {
+            text-align: center;
+            background-color: indigo;
+            color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-box">
+            <h1>Amni Zafirah Bt Norazlaili</h1>
+            <h2>Information Management Specialist</h2>
+            <h3>Passionate About Data and Record Efficiency</h3>
+            <img src="image/profile.png" alt="Amni Zafirah">
+        </div>
+    </section>
+
+    <!-- Navigation Popup -->
+    <button class="nav-button" onclick="toggleNav()">Menu</button>
+    <div class="overlay" onclick="toggleNav()"></div>
+    <div class="nav-popup" id="navPopup">
+        <h3>Navigation</h3>
+        <ul>
+            <li><a href="biodata.html">Profile and Background</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="achievement.html">Achievements</a></li>
+            <li><a href="calendar.html">Calendar</a></li>
+        </ul>
+    </div>
+
+    <!-- About me Container -->
+    <div class="aboutus container">
+        <header>
+            <h1>My Page</h1>
+            <p>Welcome to my personal website! My name is Amni Zafirah, and I am a passionate and detail-oriented professional specializing in information management, recordkeeping, and system optimization. With a solid foundation in information systems, records management, and data handling, I am driven to help organizations streamline their processes and achieve operational excellence.</p>
+        </header>
+        <section class="experience-details">
+            <div class="experience-info">
+                <h2>Who I am?</h2>
+                <p>I am currently pursuing a Diploma in Information Management with a specialization in System, Record, and Library Management at Universiti Teknologi MARA (UiTM), Kelantan. My education and practical experiences have equipped me with a unique blend of technical expertise, analytical thinking, and creative problem-solving skills. Over the years, I have developed a strong interest in using data and technology to improve workflows, enhance decision-making, and deliver impactful results.
+                    In addition to my academic journey, I have had the privilege of working in various capacities that allowed me to apply my knowledge in real-world settings. From coordinating educational events to creating automated tools for data management, I take pride in my ability to adapt, collaborate, and innovate in dynamic environments.</p>
+            </div>
+            <div class="extracurricular">
+                <h2>My Mission</h2>
+                <p>My mission is to bridge the gap between information systems and organizational efficiency. I strive to simplify complex workflows, ensure the integrity of data records, and support decision-making through well-structured and accessible information. Whether it’s through creating streamlined Excel tools, designing visually engaging presentations, or organizing records for easy retrieval, my work aims to make an impact that lasts.</p>
+            </div>
+            <div class="additional-info">
+                <h2>What Set Me Apart</h2>
+                <ul>
+                    <li>Adaptability: I excel in navigating diverse roles and responsibilities, from technical tasks like data analysis to creative projects like designing program materials.</li>
+                    <li>Commitment to Excellence: I take pride in delivering work that is not only accurate but also adds value to the team and the organization</li>
+                    <li>Team-Oriented Mindset: Collaboration is at the heart of my approach. I thrive in team environments, contributing my skills to achieve common goals.</li>
+                    <li>Creative Solutions: I enjoy finding innovative ways to solve problems, especially when it involves combining technical tools with creative thinking.</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="aboutus-info">
+            <h2>Contact Information</h2>
+            <p><strong>Phone:</strong> <a href="https://wa.link/jdb1g8" target="_blank">+6011 3653 3079</a></p>
+            <p><strong>Email:</strong> <a href="mailto:amnicr23@gmail.com">amnicr23@gmail.com</a></p>
+            <p><strong>Instagram:</strong> <a href="https://www.instagram.com/4mni_zafirah/" target="_blank">@4mni_zafirah</a></p>
+            <p><strong>TikTok:</strong> <a href="https://www.tiktok.com/@amnicr23" target="_blank">@amnicr23</a></p>
+        </div>
+        <p>&copy; 2024 Amni Zafirah Bt Norazlaili. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function toggleNav() {
+            const navPopup = document.getElementById('navPopup');
+            const overlay = document.querySelector('.overlay');
+            const isVisible = navPopup.style.display === 'block';
+
+            navPopup.style.display = isVisible ? 'none' : 'block';
+            overlay.style.display = isVisible ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>

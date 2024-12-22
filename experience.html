@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience - Amni Zafirah</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Popup -->
+    <button class="nav-button" onclick="toggleNav()">Menu</button>
+    <div class="overlay" onclick="toggleNav()"></div>
+    <div class="nav-popup" id="navPopup">
+        <h3>Navigation</h3>
+        <ul>
+            <li><a href="main.html">Home</a></li>
+            <li><a href="achievement.html">Achievements</a></li>
+            <li><a href="biodata.html">Profile and Background</a></li>
+            <li><a href="calendar.html">Calendar</a></li>
+        </ul>
+    </div>
+
+    <!-- Experience Page Content -->
+    <div class="experience-container">
+        <header>
+            <h1>Experience</h1>
+            <p>My journey has been shaped by hands-on experiences in various roles that have allowed me to apply my knowledge, build new skills, and contribute meaningfully to organizational goals. Below is an overview of my professional and extracurricular experiences</p>
+        </header>
+
+        <section class="experience-details">
+            <div class="experience-info">
+                <h2>Educational & Experience Background</h2>
+
+                <h3>Professional Experience</h3>
+                <p><strong>Internship | Pejabat Pendidikan Daerah Tanah Merah, Kelantan</strong></p>
+                <p>Unit Pendidikan Khas, Sektor Pembelajaran </p>
+                <p>July 2024 - September 2024</p>
+                <ul>
+                    <li>Data management:</li>
+                    <p>Assisted with data entry and record management, ensuring the accurate input of school and teacher data into Excel and government platforms like the DELIMa system.</p>
+                    <p>Developed automated spreadsheets to calculate and track student and teacher information, improving data accuracy and efficiency.</p>
+                    <li>Event Coordination:</li>
+                    <p>Supported the logistics and data management for events such as Kejohanan Sukan Stacking Pendidikan Khas and MSSD sports tournaments.</p>
+                    <p>Assisted in organizing materials, managing participant records, and ensuring smooth event execution.</p>
+                    <li>Documentation & Design:</li>
+                    <p>Created official documents, certificates, and program materials for district-level events.</p>
+                    <p>Designed visually appealing presentation slides to support educational programs and meetings.</p>
+                    <li>Technical Assistance:</li>
+                    <P>Provided technical support during meetings, ensuring seamless communication and report preparation.</P>
+                    <p>Acted as a liaison between team members, supervisors, and external stakeholders to manage correspondence and meeting follow-ups.</p>
+                </ul>
+
+                <h3>Education</h3>
+                <p><strong>Universiti Teknologi MARA (UiTM), Kelantan</strong></p>
+                <p>Diploma in Information Management (System, Record, and Library Management)</p>
+                <p>October 2022 – February 2025</p>
+                <ul>
+                    <li>Current CGPA: 3.04 (Semester 4)</li>
+                    <li>Gained foundational and advanced knowledge in information systems, recordkeeping, and library management.</li>
+                    <li>Developed technical and analytical skills through coursework and projects, preparing for roles in data and record management.</li>
+
+                    <a href="https://youtu.be/aQPzNhrm33k?si=CuwPEoOkfs3QDb4V"> assignment IMD 162</a>
+                    <a href="https://youtu.be/cHbGH1ybc00?si=odOxcW_r_ihrhBfv"> Assignment IMD 164</a>
+                    <a href="https://youtu.be/B49Ia6PbvKQ?si=H5K5bFSHkd50_59X">Assignment IMD 163</a>
+                </ul>
+
+            </div>
+
+            <div class="extracurricular">
+                <h2>Extracurricular Activities & Contributions</h2>
+                <p><strong>Club Entrepreneurial Action Us (ENACTUS)</strong></p>
+                <p>October - present</p>
+                <ul>
+                    <li><strong>Leadership Role</strong></li>
+                    <p><strong>Prongram Director:</strong>
+                        Directed the Annual General Meeting (AGM), overseeing planning, coordination, and execution, ensuring a professional and engaging event.</p>
+                    <p><strong>Korporat and Protocol:</strong>
+                        Managed corporate and protocol duties for the club, including stakeholder communication and event planning.</p>
+                    <li>Event Contributions:</li>
+                    <p><strong>Biro Korporat and Protocol:</strong>
+                        Played a vital role in organizing Program Toward 1st Class, ensuring all protocol and documentation were handled efficiently.</p>
+                    <p><strong>Leader Crew:</strong>
+                        Lead a team for the Sharing Talk session during UiTM’s Minggu Kesenian, coordinating logistics and managing on-the-ground tasks.</p>
+                </ul>
+            </div>
+
+            <div class="key project-info">
+                <h2>Key Project</h2>
+                <p><strong>Excel Automation for Data Tracking:</strong></p>
+                <ul>
+                    <li>Created formula-driven spreadsheets to handle teacher and student data, saving time and reducing errors.</li>
+                </ul>
+                <p><strong>Event Material Design:</strong></p>
+                <ul>
+                    <li>Designed slides, promotional materials, and official documents using Canva and PowerPoint.</li>
+                </ul>
+                <p><strong>Karnival Kebolehpasaran Murid Berkeperluan Pendidikan Khas:</strong></p>
+                <ul>
+                    <li>Actively contributed to the planning and execution of this major event, showcasing leadership and teamwork skills.</li>
+                </ul>
+
+                <!-- Carousel Section -->
+                <section class="carousel-section">
+                    <h2>Image Carousel Experience</h2>
+                    <div class="carousel">
+                        <img src="image/5.jpg" alt="Placeholder 1">
+                        <img src="image/6.jpg" alt="Placeholder 2">
+                        <img src="image/9.jpg" alt="Placeholder 5">
+                        <img src="image/13.jpg" alt="Placeholder 9">
+                        <img src="image/16.jpg" alt="Placeholder 12">
+                    </div>
+                </section>
+
+        </section>
+
+        <footer>
+            <h3>“My educational journey and professional experiences have provided me with a strong foundation in information management and organizational skills. I am eager to apply these capabilities in impactful roles moving forward.”</h3>
+            <p>&copy; 2024 Amni Zafirah Bt Norazlaili. All Rights Reserved.</p>
+        </footer>
+    </div>
+
+    <!-- JavaScript for Navigation Popup -->
+    <script>
+        function toggleNav() {
+            const nav = document.getElementById('navPopup');
+            const overlay = document.querySelector('.overlay');
+            nav.classList.toggle('active');
+            overlay.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

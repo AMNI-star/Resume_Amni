@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achievements - Amni Zafirah</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Popup -->
+    <button class="nav-button" onclick="toggleNav()">Menu</button>
+    <div class="overlay" onclick="toggleNav()"></div>
+    <div class="nav-popup" id="navPopup">
+        <h3>Navigation</h3>
+        <ul>
+            <li><a href="main.html">Home</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="biodata.html">Profile and Background</a></li>
+            <li><a href="calendar.html">Calendar</a></li>
+        </ul>
+    </div>
+
+    <!-- Family Page Content -->
+    <div class="biodata-container">
+        <header>
+            <h1>Achievements & Expertise</h1>
+            <p>Amni Zafirah Bt Norazlaili</p>
+        </header>
+
+        <section class="Skill-details">
+            <div class="Skill-info">
+                <h2>Skills</h2>
+                <p><strong>Technical Skills</strong></p>
+                <ul>
+                    <li><strong>Microsoft Office Suite:</strong>Word(Advanced), PowerPoint (Advanced), Excel (Intermediate)</li>
+                    <li><strong>Creative Tools:</strong> Canva (Advanced)</li>
+                    <li><strong>Programming & Analysis Tools:</strong>Dev C++ (Basic), VOSviewer (Basic)</li>
+                </ul>
+                <p><strong>Soft Skills</strong></p>
+                <ul>
+                    <li><strong>Communication (Advanced):</strong>Skilled in professional writing, public speaking, and effective team interaction.</li>
+                    <li><strong>Teamwork (Advanced):</strong>Works collaboratively to achieve shared goals efficiently.</li>
+                    <li><strong>Commitment (Advanced):</strong>Maintains high standards and meets deadlines consistently.</li>
+                    <li><strong>Leadership (Intermediate):</strong>Demonstrated ability to lead teams for events and projects.</li>
+                </ul>
+
+            </div>
+        </section>
+
+        <section class="Project-details">
+            <div class="Project-info">
+                <h2>Projects</h2>
+                <p><strong>Excel Automation for Data Tracking</strong></p>
+                <ul>
+                    <li>Created dynamic spreadsheets during an internship to simplify the organization and management of student and teacher data.</li>
+                    <li>Automated calculations to reduce manual errors and enhance data accuracy.</li>
+                </ul>
+                <p><strong>Karnival Kebolehpasaran Murid Berkeperluan Pendidikan Khas (MBPK)</strong></p>
+                <ul>
+                    <li>Collaborated with the organizing committee to manage logistics, participant records, and ensure smooth event execution.</li>
+                    <li>Developed registration processes and event schedules to support operational success.</li>
+                </ul>
+                <p><strong>Event Materials Design</strong></p>
+                <ul>
+                    <li>Designed professional event materials, including certificates, slides, and promotional content, using Canva and PowerPoint.</li>
+                </ul>
+                <p><strong>Kejohanan Sukan Stacking Pendidikan Khas</strong></p>
+                <ul>
+                    <li>Coordinated data entry and logistics for participants, ensuring accurate records and event timelines.</li>
+                    <li>Supported the technical and operational needs of this district-level sports event.</li>
+                </ul>
+
+
+            </div>
+        </section>
+
+        <audio id="familyAudio" controls>
+            <source src="audio/she.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <footer>
+            <p><strong> skills and project experiences demonstrate my ability to handle both creative and technical challenges, enabling me to contribute effectively to a variety of professional environments.”</strong>“My</p>
+            <p>&copy; 2024 Amni Zafirah Bt Norazlaili. All Rights Reserved.</p>
+        </footer>
+    </div>
+
+    <!-- JavaScript for Navigation Popup and Audio Autoplay -->
+    <script>
+        function toggleNav() {
+            const nav = document.getElementById('navPopup');
+            const overlay = document.querySelector('.overlay');
+            nav.classList.toggle('active');
+            overlay.classList.toggle('active');
+        }
+
+        // Ensure the audio plays when the page loads
+        window.addEventListener('load', function() {
+            const audio = document.getElementById('familyAudio');
+            audio.play().catch(error => {
+                console.log('Autoplay blocked by browser. User interaction required.');
+            });
+        });
+    </script>
+</body>
+</html>
